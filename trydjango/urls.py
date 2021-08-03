@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from pages.views import home_view, hello_view, contact_view, response_view, order_view
-from products.views import product_detail_view
+from products.views import product_detail_view, product_create_view
 
 
 
@@ -28,4 +28,5 @@ urlpatterns = [
     path('response/', response_view),
     path('order/', order_view),
     path('product/', product_detail_view),
+    path('product_create/', product_create_view),
 ]
